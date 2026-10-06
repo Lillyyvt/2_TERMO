@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "lili",
+    "quantidade": 3,
+    "custoUnitario": 50
+  },
+  {
+    "nome": "lau",
+    "quantidade": 4,
+    "custoUnitario": 1.99
+  }
+]
