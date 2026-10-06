@@ -1,0 +1,36 @@
+header a {
+    
+}
+
+.cabecalho {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(46, 21, 0);
+    color: rgb(255, 234, 215);
+    text-align: center;
+    padding: 10px
+}
+
+nav ul {
+    display: flex;
+    justify-content:flex-end;
+    background-color:rgb(36, 22, 0);
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 228, 205);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+h1{
+    float: left;
+    padding-bottom: 10px;
+}

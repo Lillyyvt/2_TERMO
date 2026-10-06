@@ -1,0 +1,26 @@
+/* CABEÇALHO */
+h1 { color: blueviolet; 
+    font-family: unset; 
+    background-color: rgb(92, 21, 95);
+    font-size: 30px;
+
+}/* CLASSE*/
+.seletor {
+    color: rgb(14, 9, 157);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.5px;
+
+}
+/* ID */
+#texto {
+    color: rgb(67, 6, 83);
+    font-weight: bold;
+    font-size: 20px;}
+   h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
