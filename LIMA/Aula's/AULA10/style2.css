@@ -1,0 +1,45 @@
+.equipe {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: flex-start;  /*Quando testado puxou o texto para o canto esquerda */
+    justify-content: center;/*uando coloco o comando o texto fica centralizado e no meio */
+    justify-content: flex-end; /* colocado puxa o texto para o canto direta */
+    justify-content: space-between; /*Quando configurado desta forma deixa o texto com espaço entre eles*/
+    justify-content: space-evenly; /*Quando configurando deixa o texto com espaço mas centralizado e bem menos em comparação com a space-between*/
+}
+
+.equipeb {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    height: 150px;
+    align-items: flex-start; 
+} 
+
+.flexb {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 8%;
+}
+
+.flexc {
+    display: flex;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.flexd {
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 8%
+}
+
+.cards article {
+    flex: 1;
+    gap: 43px;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
