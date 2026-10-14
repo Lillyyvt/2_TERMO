@@ -82,7 +82,7 @@ display: grid;
 /* TABLET */
 /* @media (max-width: 900px) {
     .colunas {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeaT(2, 1fr);
     }
 } 
 
