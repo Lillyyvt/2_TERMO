@@ -1,0 +1,100 @@
+.grid-ex1 {
+    display: grid;
+    /* grid-template-colums: 2fr 1fr. */
+      /* grid-template-colums: 1fr 1fr 1fr. */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 32px;
+    height: auto;
+    width: auto;
+    background-color: rgb(211, 211, 255);
+}
+
+.grid-gal-img {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+/* grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+gap: 32px; */
+list-style: none;
+padding: 0;
+}
+
+img {
+width: 100%;
+height: auto;
+display: inine-block;
+}
+
+
+.flex-grid {
+display: flex;
+align-items: center;
+gap: 40px;
+}
+
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 43px;
+}
+
+
+
+/* Configuração de Responsividade */
+@media (max-width: 800px) {
+    .lab-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+.flex-grid {
+flex-direction: column;
+    }   
+}
+
+/* @media (max-width: 768px){
+    .grid-ex1 {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* Configurações de Midias para Dispositivos */
+/* DESKTOP*/
+.grid-ex1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+.grid-ex1 {
+grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-ex1 {
+grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .grid-ex1 {
+        grid-template-columns: 1fr;
+    }
+    .grid-gal-img{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+

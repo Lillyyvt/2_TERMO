@@ -1,0 +1,108 @@
+/* EXERCÍCIO 01 — CRIE 3 COLUNAS
+Com seis itens, crie uma grade de três colunas.
+
+EXERCÍCIO 02 — CRIE 2 COLUNAS
+Altere o exercício anterior para duas colunas.
+
+EXERCÍCIO 03 — FRAÇÕES
+Crie 2fr 1fr e explique qual coluna fica maior.
+
+EXERCÍCIO 04 — REPEAT
+Reescreva 1fr 1fr 1fr 1fr utilizando repeat().
+
+EXERCÍCIO 05 — RESPONSIVIDADE
+• 3 colunas no desktop;
+• 2 colunas no tablet;
+• 1 coluna no celular.
+
+EXERCÍCIO 06 — AUTO-FIT
+Substitua as Media Queries da grade por:
+
+repeat(
+auto-fit,
+minmax(220px, 1fr)
+)
+
+Compare as duas soluções. */
+
+
+/* exercicio 1 */
+/* .colunas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+     text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+      background-color: #f2f2f2;  */
+
+
+/* exercicio 2 */
+/* .colunas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+} */
+
+/* exercicio 3 */
+    /* .colunas {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* A primeira coluna tem o dobro do tamanho da segunda coluna
+    gap: 20px;
+    list-style: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+}  */
+
+/* exercicio 4 */
+/* .colunas {
+display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr); /* Cria quatro colunas do mesmo tamanho 
+    gap: 20px;
+    list-style: none;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+} */
+
+/* exercicio 5 */
+/* TABLET */
+/* @media (max-width: 900px) {
+    .colunas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+/* CELULAR */
+/* @media (max-width: 600px) {
+    .colunas {
+        grid-template-columns: 1fr;
+    }
+} 
+
+/* DESKTOP */
+/* .colunas {
+    grid-template-columns: repeat(3, 1fr);
+    Gap: 20px;
+    list-style: none;
+}
+
+/* exercicio 6 */
+/* @media (min-width: 220px) {
+    .colunas {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+} */
