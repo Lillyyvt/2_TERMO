@@ -1,0 +1,74 @@
+/*
+ERRO
+
+ROOT: Podemos guardar nossas cores e informações gerais em um unico lugar
+:root {
+  Paleta de cores 
+ --creme : #f4e6c8;
+ --preto : #000000;
+ --branco : #ffffff; 
+       Tipografia 
+    --fonte-principal: 'Times New Roman', serif;
+    --fonte-texto: 'Arial';
+    --fonte-secundária: "IBM Plex Sans", sans-serif;
+}
+ Configurações de RESET BASICO: Resetar as configurações de todo html 
+html{
+    scroll-behavior: smooth; /* Faz com que a rolagem da página seja suave 
+ }
+body{
+    margin: 5px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800px;  Deixa o texto mais grosso 
+    color: var(--preto);  Define a cor do texto 
+    line-height: 2.5;  Define o espaçamento entre as linhas 
+}
+img {
+    max-width: 100%;  Faz com que a imagem não ultrapasse o tamanho do elemento pai 
+    display: block;  Remove o espaço em branco abaixo da imagem 
+    height: auto;  Faz com que a altura da imagem seja proporcional à largura 
+}
+Fim das configurações básicas 
+.id-v {
+    height: 100px;
+    background-color: var(--creme);
+    color: var(--branco);
+    font-family: var(--fonte-texto);
+}
+h1, h2, h3 {
+    margin-top: 0;  Remove a margem superior dos títulos 
+    color: var(--branco);
+    
+}
+h1 {
+    font-size: 3rem;  Define o tamanho da fonte do h1 
+    line-height: 1.1; Define o espaçamento entre as linhas do h1
+}
+h2 {
+    font-size: 2rem;  Define o tamanho da fonte do h2 
+}
+h3 {
+    font-size: 1.25rem;  Define o tamanho da fonte do h3 
+}
+.id-nav{
+    display: flex;  Faz com que os elementos fiquem lado a lado 
+    gap: 40px; Define o espaçamento entre os elementos 
+    list-style: none;  Remove os marcadores da lista 
+    margin: 20px;  Remove a margem da lista 
+    padding: 20px;  Remove o padding da lista 
+}
+id-nav a{
+    text-decoration: none;  Remove o sublinhado dos links 
+    color: var(--preto);  Define a cor dos links 
+    font-weight: 500; Define o peso da fonte dos links 
+   
+}
+.id-v a:hover{
+    color: rgb(97, 40, 14);  Define a cor dos links ao passar o mouse 
+    background-color: var(--creme);  Define a cor de fundo dos links ao passar o mouse 
+}
+/Aplicação de funcionalidade e acessibilidade por teclado/
+.id-v a:focus-visible {
+   outline: 2px solid var(--branco);  Define a cor da borda dos links ao focar 
+   outline-offset: 10px; /* Define o espaçamento entre a borda e o elemento 
+} */

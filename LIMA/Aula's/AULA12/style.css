@@ -1,0 +1,131 @@
+/* root: podemos guardar nossas cores e informações gerais em um unico lugar */
+:root{
+    /* paleta */
+    --vinho: #280b01;
+    --azul:#4e190c;
+    --creme: #FFFFF0;
+    --cinza:#4e5965;
+    --branco:#FFFFFF;
+    /* tipografia */
+    --fonte-principal: 'Times New Roman', serif;
+    --fonte-texto: 'arial';
+    --fonte-segundaria: "Abel", sans-serif;
+}
+/* comfigurações de reset basico */
+*{
+    /* permitr alterar configuraçõs de todo o html */
+    box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: var(--fonte-segundaria);
+    font-weight: 800; /* peso da fonte */
+    color: var(--azul);
+    background-color: var(--creme);
+    line-height: 1.6; /* altura da linha */
+}
+img{
+    max-width: 100%;/* largura maxima da imagem */
+    height: auto; /* altura da imagem */
+    display: block; /* exibir a imagem como bloco */
+}
+/* fim das confihurações basicas */
+.id-v{
+    height: 100px;
+    background-color: var(--vinho); /* cor de fundo */
+    color: var(--creme);
+    font-family: var(--fonte-texto);
+}
+h1, h2, h3{  
+    margin-top: 0; /* remover a margem superior */
+    color: var(--azul);
+}
+h1 {
+    font-size: 3rem; /* tamanho da fonte */
+    line-height: 1.1; /* altura da linha */
+}
+h2{
+    font-size: 2rem;/* tamanho da fonte */
+}
+h3{
+    font-size: 1.25rem;
+}
+.id-nav{
+    display: flex; /* exibir os itens em linha */
+    gap: 40px;
+    list-style: none; /* remover os marcadores da lista */
+    margin: 20px; /* remover a margem da lista */
+    padding: 20px; /* remover o preenchimento da lista */
+}
+id-nav a {
+    color: var(--vinho);/* cor do link */
+    text-decoration: none; /* remover o sublinhado do link */
+    font-weight: 500; /* peso da fonte */ 
+}
+.id-v a:hover{
+        color: var(--cinza);
+    }
+    /* aplicação de funcionalidades e acessibilidade por teclado */
+.id-nav a:focus-visible{
+    outline: 10px dotted var(--branco); /* contorno do link */
+    outline-offset: 10px; /* espaço entre o contorno e o elemento */
+}
+.id-ban{
+     display: flex; /* exibir os itens em linha */
+     align-items: center; /* alinhar os itens ao centro */
+     gap:40px; /* espaçamento entre os itens */
+     padding: 80px 8%;
+     background-color: var(--branco); 
+}
+.id-ban-img{
+ flex: 1; /* ocupar o mesmo espaço que o texto */
+ margin: p;
+}
+.id-ban-img img{
+    width: 100%; /* largura da imagem */
+    border-radius: 18px; /* borda arredondada */
+}
+.botao-id {
+   display: inline-block; /* exibir o botão como bloco */
+   margin-top: 16px; /* margem superior */
+   padding: 12px 24px;
+   background-color: var(--azul);
+   color: var(--branco);
+   text-decoration: none; /* remover o sublinhado do link */
+   font-weight: 600; /* peso da fonte */
+   border-radius: 16px; /* borda arredondada */
+   transition: backgroud-color 0.5s ease; /* transição de cor */
+}
+.botao-id:hover{
+    background-color: var(--creme);
+}
+.id-grid{
+    display: grid; /* exibir os itens em grade */
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); /* definir o tamanho das colunas */
+    gap: 40px;
+    list-style: none; /* remover os marcadores da lista */
+    margin: 0;
+    padding: 0;
+}
+.id-grid-cart{
+    height: 100%;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* transição de transformação e sombra */
+}
+.id-grid-cart img{
+    width: 100%;
+    aspect-ratio: 4 / 3; /* proporção da imagem */
+    object-fit: cover; /* ajustar a imagem para cobrir o espaço */
+    border-radius: 10px; /* borda arredondada */
+    box-shadow: 0 8px 24px rgb(78, 89, 101); /* sombra da imagem */
+}
+.id-grid-cart:hover{
+    transform: translateY(-4px); /* mover o elemento para cima */
+    box-shadow: 0 12px 30px  rgb(78, 89, 101); /* sombra do elemento */
+}
