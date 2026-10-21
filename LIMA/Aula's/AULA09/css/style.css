@@ -1,7 +1,7 @@
 header a {
     
 }
-
+/*adicione a formatação da AULA12*/
 .cabecalho {
     font-family: Arial, Helvetica, sans-serif;
     background-color:rgb(46, 21, 0);
@@ -28,9 +28,24 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+ 
 }
 
 h1{
     float: left;
     padding-bottom: 10px;
+
+}
+/* alinhe o tamanho da imagem e o texto do cabeçalho */
+.imagem-cafes img {
+    
+    width: 100px;
+    height: 100px;
+    float:none;
+    margin-right: 10px;
+    display: block; /* exibir a imagem como bloco */
+    border-radius: 10px; /* borda arredondada */
+    box-shadow: 0 8px 24px rgb(78, 89, 101); /* sombra da imagem */
+    flex: 1; /* ocupar o mesmo espaço que o texto */
+    
 }
