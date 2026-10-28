@@ -1,0 +1,185 @@
+<!-- A empresa fictícia DevSolutions recebeu a solicitação de desenvolver uma página Web
+temática voltada à nostalgia dos anos 80, 90 e 2000. O cliente deseja uma interface
+visualmente atrativa, organizada, responsiva e capaz de apresentar conteúdos de
+diferentes épocas utilizando imagens, textos, cards e seções bem definidas.
+Como referência de qualidade, foi disponibilizado um modelo de alta fidelidade, que
+deverá ser utilizado para orientar a organização visual, a distribuição dos conteúdos e o
+comportamento da página.
+O objetivo desta atividade não é copiar exatamente o conteúdo apresentado no modelo,
+mas desenvolver uma solução própria que demonstre a aplicação dos conhecimentos
+estudados ao longo das aulas. -->
+<!-- 1. Identificar as características e tipos de linguagem de marcação
+2. Identifica corretamente HTML e CSS como linguagens de marcação e
+estilização, respectivamente. Distingue as funções primárias de HTML e CSS
+no contexto do desenvolvimento web.
+3. Utilizar linguagem de marcação para desenvolvimento de páginas web
+4. Constrói a estrutura básica de uma página web utilizando elementos
+HTML corretamente.
+Incorpora elementos de texto, links, listas e imagens de forma funcional nas
+páginas.
+5. Utilizar semântica de linguagem de marcação conforme normas
+6. Aplica tags HTML semânticas (ex: <header>, <nav>, <main>, <article>,
+<section>, <footer>) de acordo com o conteúdo.
+7. Valida o código HTML refatorado conforme as normas do W3C. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SCOOPS AHOY Stranger Things</title>
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="logo-st-2.0.png" alt="Logo">
+    <div class="logo-text">
+        <h1>Stranger Things</h1>
+        <p>“Scoops. Scoops Ahoy.”</p></div>
+    </div>
+<nav>
+    <ul>
+        <li><a href="#inicio">Chapter One: O Desaparecimento de Will Byers<a></li>
+        <li><a href="#personagens">QUEM SOMOS?</a></li>
+        <li><a href="#jogo">D&D</a></li>
+        <li><a href="#gameover">GAMEOVER</a></li>
+       
+    </ul>
+    </nav>
+   </header>
+<section id="inicio" class="1">
+    <div class="1.2">
+        
+        <audio controls src="musica.mp3" class="mp3"></audio>
+        <h2>SHOULD I STAY OR SHOULD I GO</h2>
+        <p>If you say that you are mine
+I'll be here till the end of time
+So you got to let me know
+Should I stay or should I go?
+
+It's always tease, tease, tease
+You're happy when I'm on my knees
+One day is fine, the next is black
+So if you want me off your back
+Well, come on and let me know
+Should I stay or should I go?
+
+</p>
+
+</audio>
+    </div>
+
+    <div class="image">
+        <img src="img.will" alt="imagem_WILL">
+    </div>
+</section>
+<section id="personagens" class="2">
+<h2>QUEM SOMOS?</h2>
+<p>“Se nós dois estamos ficando loucos, então nós vamos enlouquecer juntos, certo?" </p>
+<article class="will">
+    <div class="2.1">
+        <details>
+  <summary> Will, o Sábio</summary>
+  <p>Sorcerer tem um poder inato, explosivo e impulsionado por emoções/carga interna, e não fruto de estudo ou de um grimório de mago. A força dele depende de sua proximidade e conexão com a colmeia do Mundo Invertido</p>
+</details>
+</div>
+<img src="will" alt="will">
+
+
+</article>
+<article class="Mike">
+    <div class="2.2">
+        <details>
+  <summary>Mike, o Valente</summary>
+  <p>O Paladino extrai seu poder mágico e de combate a partir de um juramento sagrado. Para Mike, esse juramento se traduz na sua lealdade inabalável e na promessa de proteger seus amigos e, especialmente, a Eleven</p>
+</details>
+</div>
+<img src="Mike" alt="Mike">
+</article>
+
+
+<article class="EL">
+    <div class="2.3">
+        <details>
+  <summary>Eleven, a Maga</summary>
+  <p>Maga da Guerra mistura princípios das escolas de Evocação (ataque) e Abjuração (defesa), criando um conjurador tático focado em sobreviver e controlar o campo de batalha</p>
+</details>
+</div>
+<img src="eleven" alt="eleven">
+</article>
+
+
+<article class="Lucas">
+    <div class="2.4">
+        <details>
+  <summary>Lucas, o Patrulheiro</summary>
+  <p>Ranger usa armas físicas e mira à distância, com destaque para o seu estilingue (ou wrist rocket), além de demonstrar grande habilidade de combate corpo a corpo e uso de outros objetos improvisados (como um machado).</p>
+</details>
+</div>
+<img src="lucas" alt="lucas">
+</article>
+
+
+<article class="Max">
+    <div class="2.5">
+        <details>
+  <summary>Max, MADMAX</summary>
+  <p>Zoomer é ser o elemento de alta velocidade, agilidade e transporte do grupo.</p>
+</details>
+</div>
+<img src="will" alt="will">
+</article>
+
+
+<article class="Dustin">
+    <div class="2.6">
+        <details>
+  <summary>Dustin, o Bardo</summary>
+  <p> O bardo em D&D é conhecido por sua alta inteligência, carisma, diplomacia e habilidade com as palavras para manter o grupo unido.</p>
+</details>
+</div>
+<img src="dustin" alt="dustin">
+</article>
+
+
+<article class="SR">
+    <div class="2.7">
+        <details>
+  <summary>Scoops Troop</summary>
+  <p>O maior trunfo de Steve e Robin é a química platônica. Eles funcionam como uma dupla dinâmica perfeita: enquanto Robin entra com o intelecto, a estratégia e as sacadas rápidas, Steve entra com a força física, a proteção e o suporte emocional. </p>
+</details>
+</div>
+<img src="tropa" alt="tropa">
+</article>
+</section>
+
+
+<section id="jogo" class="3">
+
+<img src="jogo.max" alt="mad-max">
+     <a href="https://www.funnygames.com.br/jogo/esquadrao_stranger_things.html" class="3.1">Jogue com Madmax</a>
+</section>
+
+<section id="gameover" class="4">
+  <article clas="4.1">
+     <h5>O JOGO</h5>
+     <h2>ACABOU?</h2>
+     <h5>Those creatures can't get out or it's game over.</h5>
+  </article>
+
+  <article class="4.2">
+    <h6>NOSTALGIA</h6>
+  </article>
+   
+    <footer>
+        <p>🥞۪Uma última luta, e todo esse pesadelo finalmente acabará.</p>
+        <div class="social-icons">
+            <a href="instagram.st" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://wa.me/5519995734253?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços!" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+    </footer>
+
+</section>
+</body>
+</html>
