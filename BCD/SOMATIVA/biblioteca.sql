@@ -204,9 +204,9 @@ FROM LIVRO;
 
 -- 19. GROUP BY 
 -- Mostre cada usuário e sua quantidade de empréstimos, do maior para o menor.
-SELECT cidade, COUNT(*) AS QUANTIDADE_CLIENTES
-FROM cliente
-GROUP BY cidade
+SELECT , COUNT(*) AS 
+FROM 
+GROUP BY 
 HAVING COUNT(*) >= 2;
 
 
