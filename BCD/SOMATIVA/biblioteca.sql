@@ -118,6 +118,7 @@ INSERT INTO LIVRO (TITULO, AUTOR, ISBN, ANO_PUBLICACAO, QUANTIDADE_DISPONIVEL) V
 
 
 
+
 -- 8. INSERT de empréstimos 
 -- Cadastre pelo menos 3 empréstimos ABERTOS para usuários e livros existentes.
 INSERT INTO EMPRESTIMO (ID_USUARIO, ID_LIVRO, DATA_EMPRESTIMO, DATA_PREVISTA, DATA_DEVOLUCAO, STATUS_EMPRESTIMO) 
@@ -144,41 +145,52 @@ WHERE ANO_PUBLICACAO >= 2020;
 
 -- 11. DELETE e integridade
 -- Crie e exclua um usuário sem empréstimos. Depois tente excluir um usuário que possua empréstimo e explique o resultado.
--- Criando a tabela de usuários
-CREATE TABLE usuarios (
-    id_usuario INT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL
-);
+-- 1. Inserir o usuário
 
--- Criando a tabela de empréstimos com restrição de chave estrangeira
-CREATE TABLE emprestimos (
-    id_emprestimo INT PRIMARY KEY,
-    id_usuario INT,
-    valor DECIMAL(10, 2),
-    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
-);
+INSERT INTO USUARIO (nome, email, telefone, ativo) VALUES ('Juan Assumpcao', 'Juan.assumpcao@email.com','199991231456',TRUE)
 
+SELECT * FROM USUARIO
 
+DELETE FROM usuario
+WHERE ID_USUARIO = 9;
 -- 12. SELECT básico — 
 -- Liste título, autor e quantidade disponível de todos os livros.
-
+SELECT * FROM LIVRO
 
 -- 13. WHERE + ORDER BY 
 -- Liste livros com quantidade maior que 2, do maior para o menor estoque.
+SELECT TITULO, QUANTIDADE_DISPONIVEL 
+FROM LIVRO 
+WHERE QUANTIDADE_DISPONIVEL > 2
+ORDER BY QUANTIDADE_DISPONIVEL DESC;
+
 
 
 
 -- 14. LIKE 
 -- Pesquise livros cujo título contenha uma palavra escolhida por você.
+SELECT id, titulo, autor, ano_publicacao
+FROM LIVRO
+WHERE titulo LIKE '%Normal People%';
 
 
 -- 15. BETWEEN 
 -- Liste livros publicados entre 2015 e 2025. ** Bruno vou colocar entre 2015 e 2024.
-
+SELECT TITULO, ANO_PUBLICACAO
+FROM LIVRO
+WHERE ANO_PUBLICACAO = 2015 OR ANO_PUBLICACAO = 2025;
 
 
 -- 16. Funções agregadas 
 -- Mostre COUNT, SUM, AVG, MIN e MAX sobre a quantidade disponível.
+SELECT COUNT(*) AS QUANTIDADE_DISPONIVEL
+FROM LIVRO;
+
+SELECT AVG(QUANTIDADE_DISPONIVEL) AS QUANTIDADE
+FROM LIVRO;
+
+SELECT MIN(QUANTIDADE_DISPONIVEL) AS QUANTIDADE, MAX(QUANTIDADE_DISPONIVEL) AS QUANTIDADE, AVG(QUANTIDADE_DISPONIVEL) AS QUANTIDADE
+FROM LIVRO;
 
 
 
@@ -192,6 +204,10 @@ CREATE TABLE emprestimos (
 
 -- 19. GROUP BY 
 -- Mostre cada usuário e sua quantidade de empréstimos, do maior para o menor.
+SELECT cidade, COUNT(*) AS QUANTIDADE_CLIENTES
+FROM cliente
+GROUP BY cidade
+HAVING COUNT(*) >= 2;
 
 
 -- 20. LEFT JOIN 
