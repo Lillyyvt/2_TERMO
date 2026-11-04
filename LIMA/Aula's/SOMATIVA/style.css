@@ -1,18 +1,101 @@
+
+
 :root{
+ /* Cores Principais */
+  --bg-main: #FCF9FB;          /* Fundo suave off-white */
+  --bg-card: #131313;          
+  --color-blue: #2A00FF;      
+  --color-water: #16B9B6; 
+  --color-tangerine: #DF2417;  
+  --color-red: #C70D0D;
+  --color-yellow: #F0C800;
+  --color-mostarda: #E8AE25;
+  
 
-/* Cores Principais*/
---bg-main: #F5ECE2; /* bege-branco*/
---bg-
+  /* Tipografia e Leitura */
+  --text-dark: #232323;        /* Texto principal */
+  --text-muted: #fffefe;       /* Subtextos e legendas */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+
+  /* Sombras e Efeitos */
+  --shadow-sm: 0 2px 8px rgba(34, 46, 80, 0.06);
+  --shadow-md: 0 8px 24px rgba(34, 46, 80, 0.10);
+  --shadow-lg: 0 16px 36px rgba(34, 46, 80, 0.16);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*=====================================================================
+  BASE
+  ===================================================================== */
+*{ /* permitr alterar configuraçõs de todo o html */
+    box-sizing: border-box;
 }
-
 html {
-    scroll-behavior: smooth ;
+scroll-behavior: smooth;
+
+}
+body{
+    margin: 0;
+    font-family: var(--fonte-segundaria);
+    font-weight: 800; /* peso da fonte */
+    color: var(--azul);
+    background-color: var(--bg-mainmain) 
 }
 
-body 
+header div{
+  font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(209, 3, 3);
+    color: var(--bg-main);
+    text-align: center;
+    padding: 10px
+}
+img{
+    max-width: 100%;/* largura maxima da imagem */
+    height: auto; /* altura da imagem */
+     float: left;
+  margin: 0 12px 8px 0;
+  width: 100px;
+  .meio {
+  margin: 0px;
+}
+}
+
+h1{
+  color: var(--text-muted);
+ 
+}
+
+header nav{
+   list-style: none;
+}
+
+div-image {
+  max-width: 100%;/* largura maxima da imagem */
+    height: auto; /* altura da imagem */
+     float: left;
+  margin: 0 12px 8px 0;
+  width: 100px;
+  .meio {
+  margin: 0px;
+}
+}
+h2::first-letter {
+  font-size: 2.6em;
+  color: #4F46E5;
+  float:inherit;
+}
+p::first-line {
+  font-weight: bold;
+}
+/*alinhar o tamanho da imagem PERSONAGENS e o texto do cabeçalho */
+section#personagens {
+ padding: 20px;
+  align-items: center;
+  background-color: #16B9B6;
+ 
+}
