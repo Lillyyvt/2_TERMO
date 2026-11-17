@@ -130,8 +130,8 @@ WHERE ano_lancamento BETWEEN 1990 AND 2005;
 SELECT COUNT(*) AS QUANTIDADE, SUM(QUANTIDADE_DISPONIVEL) AS SOMA, AVG(QUANTIDADE_DISPONIVEL) AS MEDIA, MAX(QUANTIDADE_DISPONIVEL) AS MAXIMO, MIN(QUANTIDADE_DISPONIVEL) AS MINIMO FROM jogo;
 
 SELECT 
-E.id_categoria,
-U.nome as nome_cliente,
+E.id_locacao,
+U.nome AS nome,
 L.titulo AS titulo,
 E.data_devolucao,
 E.status_locacao
@@ -139,14 +139,17 @@ FROM locacao E
 INNER JOIN cliente U ON E.id_cliente = U.id_cliente
 INNER JOIN jogo L ON E.id_jogo = L.id_jogo
 
+
 SELECT 
-    c.nome AS cliente,
-    p.id_pedido,
-    p.status,
-    i.id_produto,
-    i.quantidade,
-    i.preco_unitario
-FROM clientes c
-JOIN pedidos p ON c.id_cliente = p.id_cliente
-JOIN itens_pedido i ON p.id_pedido = i.id_pedido
-WHERE c.id_cliente = @id_cli_trans;
+E.id_locacao,
+U.nome AS nome,
+L.titulo AS titulo,
+E.data_devolucao,
+E.status_locacao
+FROM locacao E
+INNER JOIN cliente U ON E.id_cliente = U.id_cliente
+INNER JOIN jogo L ON E.id_jogo = L.id_jogo
+WHERE E.status_locacao = 'ABERTO';
+
+SELECT
+    U.cliente
