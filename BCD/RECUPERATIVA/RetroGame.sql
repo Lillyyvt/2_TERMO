@@ -151,5 +151,10 @@ INNER JOIN cliente U ON E.id_cliente = U.id_cliente
 INNER JOIN jogo L ON E.id_jogo = L.id_jogo
 WHERE E.status_locacao = 'ABERTO';
 
-SELECT
-    U.cliente
+
+SELECT 
+    U.id_cliente, 
+    U.nome AS nome_cliente, 
+FROM cliente U
+LEFT JOIN locacao E ON E.id_cliente = E.id_cliente
+WHERE E.id_locacao IS NULL;
