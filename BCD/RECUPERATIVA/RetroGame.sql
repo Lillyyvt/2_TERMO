@@ -1,4 +1,4 @@
--- Active: 1794917653787@@127.0.0.1@3308@biblioteca_senai_lilly
+-- Active: 1794917653787@@127.0.0.1@3308@recuperativa_retrogame_livia
 
 -- FASE 1 -- 
 
@@ -153,8 +153,9 @@ WHERE E.status_locacao = 'ABERTO';
 
 
 SELECT 
-    U.id_cliente, 
-    U.nome AS nome_cliente, 
-FROM cliente U
+    U.id_cliente,
+    U.nome AS nome_cliente
+FROM cliente AS U
 LEFT JOIN locacao E ON E.id_cliente = E.id_cliente
 WHERE E.id_locacao IS NULL;
+
